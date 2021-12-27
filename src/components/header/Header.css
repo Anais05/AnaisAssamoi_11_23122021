@@ -8,13 +8,8 @@ header {
 }
 
 .logo-header {
-  padding-left: 50px;
   width: auto;
   height: 50px;
-}
-
-.nav-header {
-  padding-right: 50px;
 }
 
 .home-link,
@@ -37,14 +32,6 @@ header {
 }
 
 @media screen and (max-width: 600px) {
-  .logo-header {
-    padding-left: 30px;
-  }
-
-  .nav-header {
-    padding-right: 30px;
-  }
-
   .home-link,
   .about-link {
     font-size: 16px;
