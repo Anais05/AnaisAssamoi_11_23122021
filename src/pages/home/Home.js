@@ -6,9 +6,8 @@ import adverts from "../../datas/adverts.json";
 
 export default class Home extends Component {
   render() {
-    console.log(adverts);
     return (
-      <main className="Home">
+      <main className="home">
         <Banner
           src={HomeBanner}
           alt="paysage terre et mer"

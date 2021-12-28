@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from "../header/Header";
 import Home from "../../pages/home/Home"
 import Footer from "../footer/Footer";
+import Error from "../../pages/error/Error";
 import '../../index.css';
 
 export default class App extends Component {
@@ -15,7 +16,7 @@ export default class App extends Component {
             <Route path="/" element={<Home />} />
             <Route path="/apartment/:id" /> 
             <Route path="/About" />
-            <Route path="/error404" />
+            <Route path="*" element={<Error />} />
           </Routes>
         </div>
         <Footer />

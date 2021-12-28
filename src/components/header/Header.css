@@ -14,7 +14,6 @@ header {
 
 .home-link,
 .about-link {
-  list-style: none;
   color: #ff6060;
   cursor: pointer;
   font-size: 24px;
