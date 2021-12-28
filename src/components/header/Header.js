@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import Logo from '../../assets/logo.png';
 import './Header.css';
 
@@ -11,8 +11,12 @@ export default class Header extends Component {
           <img src={ Logo } alt='logo kasa' className="logo-header"></img>
         </Link>
         <nav className="nav-header">
-          <Link to="/" className="home-link">Accueil</Link>
-          <Link to="/About" className="about-link">A propos</Link> 
+          <NavLink to="/" className="home-link" style={({ isActive }) => ({textDecoration: isActive ? 'underline' : 'none'})}>
+            Accueil
+          </NavLink>
+          <NavLink to="/About" className="about-link" style={({ isActive }) => ({textDecoration: isActive ? 'underline' : 'none'})}>
+            A propos
+          </NavLink> 
         </nav>
       </header>
     )

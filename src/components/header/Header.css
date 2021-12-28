@@ -21,11 +21,6 @@ header {
   margin: 0;
 }
 
-.home-link:focus,
-.about-link:focus {
-  text-decoration-line: underline;
-}
-
 .home-link {
   padding-right: 30px;
 }
