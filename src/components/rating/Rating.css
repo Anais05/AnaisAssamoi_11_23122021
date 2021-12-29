@@ -1,0 +1,20 @@
+.rating {
+  margin-top: 15px;
+}
+
+.star-icon {
+  font-size: 25px;
+  margin: 0 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .rating {
+    margin-top: unset;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .star-icon {
+    font-size: 16px;
+  }
+}

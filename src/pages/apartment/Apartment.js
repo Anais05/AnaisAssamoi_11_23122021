@@ -1,7 +1,9 @@
 import React from 'react';
 import adverts from "../../datas/adverts.json";
+import './Apartment.css';
 import Error from "../../pages/error/Error";
 import Carrousel from "../../components/carrousel/Carrousel";
+import Infos from "../../components/infos/Infos";
 
 export default class Apartment extends React.Component {
 
@@ -38,6 +40,13 @@ export default class Apartment extends React.Component {
     return (
       <main className="apartment">
         <Carrousel pictures={pictures} />
+        <Infos 
+          title={title}
+          host={host}
+          rating={rating}
+          location={location}
+          tags={tags}
+        />
       </main>
     )
   }
