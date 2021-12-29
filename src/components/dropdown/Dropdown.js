@@ -14,7 +14,7 @@ export default class Dropdown extends Component {
   }
 
   openDropdown() {
-    this.setState({ isClose: !this.state.isClose })
+    this.setState({ isClose: !this.state.isClose });
   }
 
   // getdropdownContent() {
@@ -42,16 +42,16 @@ export default class Dropdown extends Component {
           <h2>{this.props.title}</h2>
           <FontAwesomeIcon className="dropdown-icon" icon={this.state.isClose ? faChevronDown : faChevronUp} />
         </div>
-        {typeof this.props.content === "string" ? (
-          <p className={`dropdown-content${ this.state.isClose ? "-close" : "-open" }`}>
-            {this.props.content}
-          </p>
-        ) : (
+        {Array.isArray(this.props.content) ? (
           <div className={`dropdown-content${ this.state.isClose ? "-close" : "-open"}`}>
             {this.props.content.map((item, index) => (
               <p key={index}>{item}</p>
             ))}
           </div>
+        ) : (
+          <p className={`dropdown-content${ this.state.isClose ? "-close" : "-open" }`}>
+            {this.props.content}
+          </p>
         )}
       </div>  
     )
