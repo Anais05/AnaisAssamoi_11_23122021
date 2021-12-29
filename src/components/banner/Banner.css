@@ -28,6 +28,10 @@
     height: 111px;
   }
 
+  .banner img {
+    border-radius: 10px;
+  }
+
   .banner h1 {
     width: 80%;
     font-size: 25px;

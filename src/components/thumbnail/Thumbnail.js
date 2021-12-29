@@ -1,12 +1,11 @@
-import React, { Component } from 'react';
-import { Link } from "react-router-dom"
-
+import React from 'react';
+import { Link } from "react-router-dom";
 import './Thumbnail.css';
 import PropTypes from "prop-types";
 
-export default class Thumbnail extends Component {
+export default class Thumbnail extends React.Component {
   render() {
-    const { id, title, cover } = this.props
+    const { id, title, cover } = this.props;
     return (
       <article className="thumb">
         <Link to={`/apartment/${id}`} className="thumb-link">
@@ -17,7 +16,6 @@ export default class Thumbnail extends Component {
     )
   }
 }
-
 
 Thumbnail.propTypes = {
   title: PropTypes.string.isRequired,

@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 import AboutBanner from "../../assets/about-banner.png";
 import Banner from "../../components/banner/Banner";
 import Dropdown from "../../components/dropdown/Dropdown";
 import aboutData from "../../datas/about.json";
 import './About.css';
 
-export default class About extends Component {
+export default class About extends React.Component {
   render() {
     return (
       <main className="about">

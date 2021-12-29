@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import adverts from "../../datas/adverts.json";
 import Error from "../../pages/error/Error";
-import Carrousel from "../../components/carrousel/Carrousel"
+import Carrousel from "../../components/carrousel/Carrousel";
 
-export default class Apartment extends Component {
+export default class Apartment extends React.Component {
 
   constructor(props) {
     super(props);

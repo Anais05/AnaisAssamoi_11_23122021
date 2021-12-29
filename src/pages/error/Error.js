@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
-import { Link } from "react-router-dom"
+import React from 'react';
+import { Link } from "react-router-dom";
 import './Error.css';
 
 
-export default class Home extends Component {
+export default class Home extends React.Component {
   render() {
     return (
       <main className="error">

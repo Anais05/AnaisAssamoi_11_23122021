@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './Feed.css';
 import PropTypes from "prop-types";
 import Thumbnail from '../thumbnail/Thumbnail';
 
-export default class Feed extends Component {
+export default class Feed extends React.Component {
   
   constructor(props) {
     super(props);

@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './Dropdown.css';
 import PropTypes from "prop-types";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 
-export default class Dropdown extends Component {
+export default class Dropdown extends React.Component {
   
   constructor(props) {
     super(props)
