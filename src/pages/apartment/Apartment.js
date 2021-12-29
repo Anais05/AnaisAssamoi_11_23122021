@@ -4,6 +4,7 @@ import './Apartment.css';
 import Error from "../../pages/error/Error";
 import Carrousel from "../../components/carrousel/Carrousel";
 import Infos from "../../components/infos/Infos";
+import Dropdown from "../../components/dropdown/Dropdown";
 
 export default class Apartment extends React.Component {
 
@@ -47,6 +48,10 @@ export default class Apartment extends React.Component {
           location={location}
           tags={tags}
         />
+        <section className="apartment-dropdown">
+          <Dropdown title='Description' content={description} />
+          <Dropdown title='Équipements' content={equipments} />
+        </section>
       </main>
     )
   }

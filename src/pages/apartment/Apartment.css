@@ -1,3 +1,22 @@
 .apartment {
   margin-bottom: 50px;
 }
+
+.apartment-dropdown {
+  display: flex;
+  justify-content: space-between;
+}
+
+.apartment-dropdown .dropdown {
+  width: 45%;
+}
+
+@media screen and (max-width: 500px) {
+  .apartment-dropdown {
+    display: block;
+  }
+
+  .apartment-dropdown .dropdown {
+    width: 100%;
+  }
+}

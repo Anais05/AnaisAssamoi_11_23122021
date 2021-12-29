@@ -42,6 +42,10 @@
   display: none;
 }
 
+.dropdown p {
+  margin: 0;
+}
+
 @media screen and (max-width: 600px) {
   .dropdown-title {
     height: 30px;
