@@ -18,7 +18,6 @@ export default class Apartment extends Component {
   }
 
   render() {
-    console.log(this.state.apartment)
     if (Object.keys(this.state.apartment).length === 0) return null;
     if (this.state.apartment === 'not found')
       return (

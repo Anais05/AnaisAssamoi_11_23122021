@@ -10,30 +10,11 @@ export default class Dropdown extends Component {
     super(props)
     this.state = { isClose: true };
     this.openDropdown = this.openDropdown.bind(this);
-    // this.getdropdownContent = this.getdropdownContent.bind(this);
   }
 
   openDropdown() {
     this.setState({ isClose: !this.state.isClose });
   }
-
-  // getdropdownContent() {
-  //   if (Array.isArray(this.props.content)) {
-  //     return (
-  //       <div className={`dropdown-content${ this.state.isClose ? "-close" : "-open"}`}>
-  //           {this.props.content.map((item, index) => (
-  //               <p key={index}>{item}</p>
-  //           ))}
-  //       </div>
-  //     )
-  //   }
-
-  //   return (
-  //     <p className={`dropdown-content${ this.state.isClose ? "-close" : "-open" }`}>
-  //       {this.props.content}
-  //     </p>
-  //   )
-  // }
 
   render() {
     return (
