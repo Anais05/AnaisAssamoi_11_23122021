@@ -1,3 +1,13 @@
+# Développez une application Web avec React et React Router
+
+Ce projet s'inscrit dans le cadre de la formation "Développeur Front-End" proposée par OpenClassrooms.
+
+## Compétences évaluées
+
+- Développer les routes d'une application web avec React Router
+- Initialiser une application web avec un framework
+- Créer des composants avec React
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
