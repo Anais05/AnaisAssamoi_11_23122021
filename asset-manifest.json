@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.03dd10c3.css",
-    "main.js": "/static/js/main.fcb60597.js",
-    "static/media/about-banner.png": "/static/media/about-banner.6409af8db1576308fb2b.png",
-    "static/media/home-banner.png": "/static/media/home-banner.ac3aa7396c2c7cd05e2e.png",
-    "index.html": "/index.html",
-    "main.03dd10c3.css.map": "/static/css/main.03dd10c3.css.map",
-    "main.fcb60597.js.map": "/static/js/main.fcb60597.js.map"
+    "main.css": "/AnaisAssamoi_11_23122021/static/css/main.03dd10c3.css",
+    "main.js": "/AnaisAssamoi_11_23122021/static/js/main.2672ca47.js",
+    "static/media/about-banner.png": "/AnaisAssamoi_11_23122021/static/media/about-banner.6409af8db1576308fb2b.png",
+    "static/media/home-banner.png": "/AnaisAssamoi_11_23122021/static/media/home-banner.ac3aa7396c2c7cd05e2e.png",
+    "index.html": "/AnaisAssamoi_11_23122021/index.html",
+    "main.03dd10c3.css.map": "/AnaisAssamoi_11_23122021/static/css/main.03dd10c3.css.map",
+    "main.2672ca47.js.map": "/AnaisAssamoi_11_23122021/static/js/main.2672ca47.js.map"
   },
   "entrypoints": [
     "static/css/main.03dd10c3.css",
-    "static/js/main.fcb60597.js"
+    "static/js/main.2672ca47.js"
   ]
 }
