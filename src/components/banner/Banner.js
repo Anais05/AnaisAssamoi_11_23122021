@@ -4,10 +4,11 @@ import PropTypes from "prop-types";
 
 export default class Banner extends React.Component {
   render() {
+    const { src, alt, title } = this.props;
     return (
       <div className="banner">
-        <img src={this.props.src} alt={this.props.alt} />
-        <h1>{this.props.title}</h1>
+        <img src={src} alt={alt} />
+        <h1>{title}</h1>
       </div>
     )
   }

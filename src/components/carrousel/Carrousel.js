@@ -33,21 +33,19 @@ export default class Carrousel extends React.Component {
   }
 
   render() {
+    const currentImg = this.state.currentImg;
+    const pictures = this.props.pictures;
     return (
       <div className="carrousel">
-        <img
-          className="carrousel-img"
-          src={this.props.pictures[this.state.currentImg]}
-          alt=""
-        />
-        {this.props.pictures.length > 1 ? (
+        <img className="carrousel-img" src={pictures[currentImg]} alt="" />
+        {pictures.length > 1 ? (
           <div className="carrousel-nav">
             <FontAwesomeIcon onClick={this.previous} className="prev" icon={faChevronLeft} />
             <FontAwesomeIcon onClick={this.next} className="prev" icon={faChevronRight} />
           </div>
         ) : null}
         <p className="carrousel-count">
-          {this.state.currentImg + 1}/{this.props.pictures.length}
+          {currentImg + 1}/{pictures.length}
         </p>
       </div>
     )

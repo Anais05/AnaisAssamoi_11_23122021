@@ -1,10 +1,11 @@
 import React from 'react';
 import adverts from "../../datas/adverts.json";
 import './Apartment.css';
-import Error from "../../pages/error/Error";
 import Carrousel from "../../components/carrousel/Carrousel";
 import Infos from "../../components/infos/Infos";
 import Dropdown from "../../components/dropdown/Dropdown";
+import { Navigate } from "react-router-dom";
+
 
 export default class Apartment extends React.Component {
 
@@ -21,23 +22,24 @@ export default class Apartment extends React.Component {
   }
 
   render() {
-    if (Object.keys(this.state.apartment).length === 0) return null;
-    if (this.state.apartment === 'not found')
+    const apartment = this.state.apartment;
+    const {
+      title,
+      pictures,
+      description,
+      host,
+      rating,
+      location,
+      equipments,
+      tags,
+    } = apartment;
+
+    if (Object.keys(apartment).length === 0) return null;
+    if (this.state.apartment === 'not found') {
       return (
-        <div>
-          <Error />
-        </div>
+        <Navigate to="/apartmentNotFound" />
       )
-      const {
-        title,
-        pictures,
-        description,
-        host,
-        rating,
-        location,
-        equipments,
-        tags,
-      } = this.state.apartment;
+    }
     return (
       <main className="apartment">
         <Carrousel pictures={pictures} />

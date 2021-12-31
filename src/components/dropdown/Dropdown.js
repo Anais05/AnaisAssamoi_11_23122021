@@ -17,21 +17,23 @@ export default class Dropdown extends React.Component {
   }
 
   render() {
+    const isClose = this.state.isClose;
+    const { title, content } = this.props;
     return (
       <div className="dropdown">
-        <div className={`dropdown-title dropdown-title${ this.state.isClose ? "-close" : "-open"}`} onClick={this.openDropdown}>
-          <h2>{this.props.title}</h2>
-          <FontAwesomeIcon className="dropdown-icon" icon={this.state.isClose ? faChevronDown : faChevronUp} />
+        <div className={`dropdown-title dropdown-title${isClose ? "-close" : "-open"}`} onClick={this.openDropdown}>
+          <h2>{title}</h2>
+          <FontAwesomeIcon className="dropdown-icon" icon={isClose ? faChevronDown : faChevronUp} />
         </div>
-        {Array.isArray(this.props.content) ? (
-          <div className={`dropdown-content${ this.state.isClose ? "-close" : "-open"}`}>
-            {this.props.content.map((item, index) => (
+        {Array.isArray(content) ? (
+          <div className={`dropdown-content${isClose ? "-close" : "-open"}`}>
+            {content.map((item, index) => (
               <p key={index}>{item}</p>
             ))}
           </div>
         ) : (
-          <p className={`dropdown-content${ this.state.isClose ? "-close" : "-open" }`}>
-            {this.props.content}
+          <p className={`dropdown-content${isClose ? "-close" : "-open" }`}>
+            {content}
           </p>
         )}
       </div>  
