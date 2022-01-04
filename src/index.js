@@ -15,10 +15,10 @@ ReactDOM.render(
         <div className="container">
           <Header />
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/apartment/:id" element={<Apartment />} />
-            <Route path="/About" element={<About />} />
-            <Route path="*" element={<Error />} />
+            <Route path="/AnaisAssamoi_11_23122021/" element={<Home />} />
+            <Route path="/AnaisAssamoi_11_23122021/apartment/:id" element={<Apartment />} />
+            <Route path="/AnaisAssamoi_11_23122021/About" element={<About />} />
+            <Route path="/AnaisAssamoi_11_23122021/*" element={<Error />} />
           </Routes>
         </div>
         <Footer />

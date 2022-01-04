@@ -7,7 +7,7 @@ export default class Footer extends React.Component {
   render() {
     return (
       <footer>
-        <Link to="/">
+        <Link to="/AnaisAssamoi_11_23122021/">
           <img src={LogoFooter} alt="Kasa logo Footer" />
         </Link>
         <p className="copyright">© 2021 Kasa. Tous droits réservés</p>

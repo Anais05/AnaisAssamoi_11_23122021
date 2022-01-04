@@ -8,7 +8,7 @@ export default class Thumbnail extends React.Component {
     const { id, title, cover } = this.props;
     return (
       <article className="thumb">
-        <Link to={`/apartment/${id}`} className="thumb-link">
+        <Link to={`/AnaisAssamoi_11_23122021/apartment/${id}`} className="thumb-link">
           <img src={cover} alt={title} />
           <h2 className="thumb-title">{title}</h2>
         </Link>

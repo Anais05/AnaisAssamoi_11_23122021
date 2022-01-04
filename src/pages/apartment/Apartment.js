@@ -37,7 +37,7 @@ export default class Apartment extends React.Component {
     if (Object.keys(apartment).length === 0) return null;
     if (this.state.apartment === 'not found') {
       return (
-        <Navigate to="/apartmentNotFound" />
+        <Navigate to="/AnaisAssamoi_11_23122021/apartmentNotFound" />
       )
     }
     return (

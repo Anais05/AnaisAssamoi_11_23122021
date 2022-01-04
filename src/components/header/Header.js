@@ -7,14 +7,14 @@ export default class Header extends React.Component {
   render() {
     return (
       <header>
-        <Link to='/'>
+        <Link to='/AnaisAssamoi_11_23122021/'>
           <img src={ Logo } alt='logo kasa' className="logo-header"></img>
         </Link>
         <nav className="nav-header">
-          <NavLink to="/" className="home-link" style={({ isActive }) => ({textDecoration: isActive ? 'underline' : 'none'})}>
+          <NavLink to="/AnaisAssamoi_11_23122021/" className="home-link" style={({ isActive }) => ({textDecoration: isActive ? 'underline' : 'none'})}>
             Accueil
           </NavLink>
-          <NavLink to="/About" className="about-link" style={({ isActive }) => ({textDecoration: isActive ? 'underline' : 'none'})}>
+          <NavLink to="/AnaisAssamoi_11_23122021/About" className="about-link" style={({ isActive }) => ({textDecoration: isActive ? 'underline' : 'none'})}>
             A propos
           </NavLink> 
         </nav>
